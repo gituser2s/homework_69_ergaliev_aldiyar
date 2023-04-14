@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+<div class="main-content">
+    <form action="{% url 'add' %}" method="POST">
+        {% csrf_token %}
+        <input type="number" placeholder="Введите первое число">
+        <input type="number" placeholder="Введите второе число">
+        <button type="submit" id="button">Прибавить</button>
+        <button type="submit">Убавить</button>
+        <button type="submit">Делить</button>
+        <button type="submit">Умножить</button>
+    </form>
+    <div class="block" id="block">
+        <p>Ответ: </p>
+    </div>
+</div>
+<script src="../js/calculator-script.js">
+
+</script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+.block{
+    border: 3px solid black;
+    width: 10%;
+}
+
+.main-content{
+    display: flex
+}
